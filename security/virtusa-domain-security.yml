@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.virtusa.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 18 16:25:24 2026 GMT
+  hsts: null
+domains:
+- domain: virtusa.com
+  dnssec: true
+  caa:
+  - 5 issue "awstrust.com"
+  - 6 issue "amazonaws.com"
+  - 0 issue "entrust.net"
+  - 1 issue "letsencrypt.org"
+  - 2 issue "digicert.com"
+  - 3 issue "amazon.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

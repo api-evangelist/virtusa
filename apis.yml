@@ -1,8 +1,26 @@
 aid: virtusa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/virtusa.png
 name: Virtusa
-description: 'Virtusa is a company surfaced as a portfolio company of crv and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Virtusa Corporation is a global provider of digital engineering, IT consulting, and
+  outsourcing services headquartered in Southborough, Massachusetts. Founded in 1996, the company
+  helps enterprises across banking and financial services, insurance, healthcare, communications,
+  media, and manufacturing modernize their technology through cloud, data, AI, and application
+  engineering. Formerly publicly traded on NASDAQ (VRTU), Virtusa was acquired by Baring Private
+  Equity Asia in 2021 and employs tens of thousands of engineers worldwide. Virtusa operates as a
+  professional-services and delivery organization; it does not publish a public developer portal or
+  external API program, so this API Evangelist profile captures its corporate and domain-security
+  footprint rather than a consumable API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/virtusa/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Enterprise
+- Digital Engineering
+- IT Services
+- Consulting
+- Cloud
+- Outsourcing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/virtusa-domain-security.yml
 - type: Website
   url: https://www.virtusa.com/
+- type: Blog
+  url: https://www.virtusa.com/insights/perspectives
+- type: PrivacyPolicy
+  url: https://www.virtusa.com/privacy-statement
+- type: TermsOfService
+  url: https://www.virtusa.com/terms-of-use
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
