@@ -217,3 +217,68 @@
     detected: '2026-10-21'
   status: not-a-workflow
   arazzo: null
+- slug: virtusa-servicenow-store-partner-apps
+  label: ServiceNow Store (partner apps)
+  partner: servicenow
+  partner_name: ServiceNow Store (partner apps)
+  category: ServiceNow Store partner app / app certification
+  type: register
+  channel: standard-directory
+  evidence: https://store.servicenow.com/store/seller/886849cbdbe9d8504ac3a851ca9619d4
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: ServiceNow Store (store.servicenow.com/store/sitemap_xml -> /store/app/<id> server-rendered pages)
+    standard: ServiceNow Store app certification (ServiceNow Certified App badge)
+    spec_file: null
+    role: servicenow-store-partner
+    registered_name: Virtusa BG Limited
+    register_id: 886849cbdbe9d8504ac3a851ca9619d4
+    matched_domain: virtusa.com
+    matched_by: domain
+    identity_source: the listing's own seller website link (no lookup)
+    certified_products:
+    - product: ServiceNow Certified App (scoped_app / generative_ai)
+      product_type: scoped_app / generative_ai
+      standard: ServiceNow Store app certification (ServiceNow Certified App badge)
+      lapsed: true
+      products_sample:
+      - CMDB Data Certification
+      releases:
+      - Zurich
+    - product: ServiceNow Certified App (scoped_app / integration)
+      product_type: scoped_app / integration
+      standard: ServiceNow Store app certification (ServiceNow Certified App badge)
+      lapsed: true
+      products_sample:
+      - OneList Approvals Adapter
+      - Task Integration
+      releases:
+      - Yokohama
+      - Zurich
+    - product: ServiceNow Certified App (scoped_app / standalone)
+      product_type: scoped_app / standalone
+      standard: ServiceNow Store app certification (ServiceNow Certified App badge)
+      lapsed: true
+      products_sample:
+      - Bright Toolbox
+      - Locawise Automated Translations
+      - Task Integration Bus
+      releases:
+      - Yokohama
+      - Zurich
+    products_sample:
+    - Bright Toolbox
+    - CMDB Data Certification
+    - Locawise Automated Translations
+    - OneList Approvals Adapter
+    - Task Integration
+    - Task Integration Bus
+    signal_note: 'listing alone = standard-participant; certified_products = one entry per Application type the
+      seller holds a ServiceNow Certified App badge for, standard named on each; lapsed: true when none of that
+      type''s certified apps lists either of the two newest release families on the Store; app counts are context,
+      never counted'
+    detected_by: sweep-servicenow-store.py
+    detected: '2026-10-23'
+  status: not-a-workflow
+  arazzo: null
